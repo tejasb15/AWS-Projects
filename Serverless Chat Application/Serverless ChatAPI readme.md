@@ -35,6 +35,12 @@ The project integrates the following AWS components:
 
 ---
 
+## Architecture Diagram
+
+![Architecture](images/ws-chat-app.png)
+
+---
+
 ## Deployment Steps
 
 ### Step 1: Create Lambda Functions and DynamoDB Table
@@ -79,12 +85,6 @@ To prevent unnecessary charges:
 
 1. Delete the WebSocket API in API Gateway.
 2. Delete the CloudFormation stack to remove associated resources.
-
----
-
-## Screenshots
-
-![Architecture](images/ws-chat-app.png)
 
 ---
 
