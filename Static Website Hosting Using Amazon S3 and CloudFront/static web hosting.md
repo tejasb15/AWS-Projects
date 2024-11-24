@@ -97,9 +97,9 @@ While this repository focuses on the **"How To Make This Website"**, you can see
 
 **Tejas Bharambe**  
 Full Stack Developer | AWS Enthusiast  
-[GitHub](https://github.com/tejasb15) | [LinkedIn](https://linkedin.com/in/tejas-bharambe)
+[GitHub](https://github.com/tejasb15) | [LinkedIn](https://www.linkedin.com/in/tejasb15/)
 
 ## **References**
 
-- [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/)
-- [Amazon CloudFront Documentation](https://docs.aws.amazon.com/cloudfront/)
+- [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
+- [Amazon CloudFront Documentation](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/getting-started-secure-static-website-cloudformation-template.html)
