@@ -1,97 +1,106 @@
-# Static Web Hosting using Amazon S3 and CloudFront 🌐
+# BalancedFlow: Elastic Load Balancing and Auto Scaling for Scalable Web Services
 
-## **Overview**
-This project demonstrates how to host a static website using **Amazon S3** and enhance its performance with **CloudFront**, AWS's Content Delivery Network (CDN). The goal is to provide a scalable, durable, and globally distributed solution for hosting static web content, like HTML, CSS, and JavaScript.
+BalancedFlow is a robust project designed to demonstrate the implementation of Elastic Load Balancing (ELB) and Auto Scaling on AWS to create a scalable and reliable web service architecture.
 
----
+## Features
 
-## **Architecture Diagram**
-Below is the architecture of the static web hosting solution using Amazon S3 and CloudFront:
+- **Elastic Load Balancer (ELB):**
+  - Distributes traffic across multiple EC2 instances.
+  - Ensures high availability and fault tolerance.
+- **Auto Scaling:**
+  - Automatically adjusts the number of EC2 instances based on traffic demands.
+  - Maintains application performance and cost efficiency.
 
-![S3 and CloudFront Architecture](images/s3-cloudfront-architecture.png)
+## Architecture
 
-!
----
+The architecture includes:
 
-## **Key Features**
-- **S3 Static Website Hosting**: 
-  - Store and host static web content with high durability and availability.
-  - Cost-effective and easy-to-manage web hosting solution.
-- **CloudFront Integration**: 
-  - Enhanced global content delivery with reduced latency.
-  - Secure and scalable distribution using AWS's global infrastructure.
+- EC2 instances distributed across multiple availability zones.
+- An Application Load Balancer (ALB) to route HTTP traffic.
+- Auto Scaling Groups to handle dynamic scaling.
 
----
+## Architecture Diagram
 
-## **Objectives**
-1. Deploy a static website with a public S3 bucket.
-2. Use **CloudFront** to distribute content with low latency.
-3. Enable SSL/TLS for secure content delivery.
-4. Demonstrate cost-effective and scalable static hosting.
+![Architecture Diagram](./BalancedFlow%20Architecture%20Diagram.png)
 
----
+## Setup Guide
 
-## **Steps to Host the Website**
-### **1. Amazon S3 Setup**
-- Create an S3 bucket for hosting the static content.
-- Enable public access and add a bucket policy for public-read access.
-- Upload the static files (e.g., `index.html`) to the S3 bucket.
+### Prerequisites
 
-### **2. Enable Static Website Hosting**
-- Configure the bucket to serve as a static website.
-- Specify the index document (e.g., `index.html`) and optional error document.
+- AWS Account
+- AWS CLI installed and configured
+- Basic understanding of EC2, VPC, and security groups
 
-### **3. Integrate CloudFront**
-- Create a CloudFront distribution for the S3 bucket.
-- Configure the origin domain and enable public access.
-- Use the CloudFront domain name to access the hosted website.
+### Steps
 
----
+#### 1. Launch EC2 Instances
 
-## **Architecture**
-- **Amazon S3**: Object storage for static content with public-read access.
-- **Amazon CloudFront**: CDN for global delivery, caching, and performance improvement.
-- **Website Endpoint**: Direct access through S3 and CloudFront domain.
+- Launch multiple EC2 instances in your selected region and availability zones.
 
----
+#### 2. Configure Elastic Load Balancer (ELB)
 
-## **Limitations**
-- **No server-side processing**: Suitable only for static content.
-- **Security configurations**: Requires careful bucket policies to avoid unauthorized access.
-- **Custom error pages**: Limited compared to traditional web servers.
+- Navigate to the EC2 Dashboard and create a new Application Load Balancer.
+- Configure listeners, security groups, and target groups as follows:
+  - Listener Protocol: HTTP
+  - Port: 80
+  - Health Check Path: `/`
 
----
+#### 3. Set Up Auto Scaling
 
-## **Advantages**
-- **High Availability**: 99.999999999% (11 nines) durability.
-- **Scalability**: Automatically handles increased traffic.
-- **Low Latency**: Content cached closer to users through edge locations.
-- **Cost-Effective**: Pay-as-you-go pricing.
+- Create an Auto Scaling Group associated with your ELB.
+- Configure scaling policies:
+  - Increase instances during high traffic.
+  - Decrease instances during low traffic.
 
-***
+#### 4. Test Your Setup
 
-## **Testing the Website**
-- Access the website using the S3 endpoint.
-- Test the CloudFront distribution domain for faster and secure content delivery.
+- Access your application using the ELB DNS name.
+- Simulate traffic to observe the scaling behavior.
 
-***
+#### 5. Cleanup
 
-## **Future Enhancements**
-- Add **AWS Lambda@Edge** for dynamic content.
-- Use **AWS Route 53** for custom domain integration.
+- To prevent unnecessary charges:
 
----
+  1. Delete the Auto Scaling group in the EC2.
 
-## **Author**
+  2. Delete the launch Template in the EC2.
+
+  3. Delete the Target Group in the EC2.
+
+  4. Delete the Load Balancer in the EC2.
+
+  5. Delete the Security Group in EC2.
+
+## Output
+
+![ELB](images/elb.png)
+
+![ASG](images/asg.png)
+
+![EC2 instance](images/ec2instance.png)
+
+![Testing ELB and Autoscaling](images/testelb.png)
+
+## Outcomes
+
+This project demonstrates:
+
+- The capability of AWS ELB to handle traffic distribution.
+- The effectiveness of Auto Scaling in maintaining optimal performance.
+- High availability and fault tolerance for web applications.
+
+## References
+
+This project was inspired by the AWS tutorial:
+
+- [Getting started with Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancer-getting-started.html)
+
+- [Create your first Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-your-first-auto-scaling-group.html)
+
+- [Set up a scaled and load-balanced application](https://docs.aws.amazon.com/autoscaling/ec2/userguide/tutorial-ec2-auto-scaling-load-balancer.html).
+
+## Author
+
 **Tejas Bharambe**  
 Full Stack Developer | AWS Enthusiast  
-[GitHub](https://github.com/tejasb15) | [LinkedIn](https://linkedin.com/in/tejas-bharambe)
-
----
-
-## **References**
-- [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/)
-- [Amazon CloudFront Documentation](https://docs.aws.amazon.com/cloudfront/)
-
----
-
+[GitHub](https://github.com/tejasb15) | [LinkedIn](https://www.linkedin.com/in/tejasb15/)
