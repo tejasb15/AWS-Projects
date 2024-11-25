@@ -21,7 +21,7 @@ The architecture includes:
 
 ## Architecture Diagram
 
-![Architecture Diagram](./BalancedFlow%20Architecture%20Diagram.png)
+![Architecture Diagram](images/BalancedFlow%20Architecture%20Diagram.png)
 
 ## Setup Guide
 
