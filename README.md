@@ -2,7 +2,9 @@
 
 Welcome to my repository of AWS Cloud projects! This collection showcases my expertise in implementing scalable, reliable, and robust solutions using AWS services. Each project focuses on a specific use case, employing various AWS features to demonstrate real-world applicability.
 
-![AWS Project Thumbnail](AWS%20Project%20Thumbnail.webp)
+<div style="text-align:center;">
+  <img src="AWS%20Project%20Thumbnail.webp" alt="AWS Project Thumbnail" width="500px" height="auto">
+</div>
 
 ## About Me
 
