@@ -2,6 +2,21 @@
 
 Welcome to my repository of AWS Cloud projects! This collection showcases my expertise in implementing scalable, reliable, and robust solutions using AWS services. Each project focuses on a specific use case, employing various AWS features to demonstrate real-world applicability.
 
+![AWS Project Thumbnail](AWS%20Project%20Thumbnail.webp)
+
+## About Me
+
+I am Tejas Bharambe, a cloud enthusiast and certified AWS practitioner. These projects demonstrate my passion for designing and deploying scalable cloud solutions. Feel free to connect with me on [GitHub](https://github.com/tejasb15) or [LinkedIn](https://linkedin.com/in/tejasb15).
+
+## How to Use This Repository
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/tejasb15/AWS-Projects.git
+   cd AWS-Projects
+   ```
+2. Navigate to the specific project folder to explore its implementation details.
+
 ## Projects Overview
 
 ### 1. **BalancedFlow: Elastic Load Balancing and Auto Scaling**
@@ -31,16 +46,3 @@ Welcome to my repository of AWS Cloud projects! This collection showcases my exp
   - Amazon CloudFront for content caching and fast delivery.
   - HTTPS support using Amazon Certificate Manager (ACM).
 - [View Project Details](./Static%20Website%20Hosting%20Using%20Amazon%20S3%20and%20CloudFront/static%20web%20hosting.md)
-
-## How to Use This Repository
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/tejasb15/AWS-Projects.git
-   cd AWS-Projects
-   ```
-2. Navigate to the specific project folder to explore its implementation details.
-
-## About Me
-
-I am Tejas Bharambe, a cloud enthusiast and certified AWS practitioner. These projects demonstrate my passion for designing and deploying scalable cloud solutions. Feel free to connect with me on [GitHub](https://github.com/tejasb15) or [LinkedIn](https://linkedin.com/in/tejasb15).
