@@ -27,7 +27,7 @@ I am Tejas Bharambe, a cloud enthusiast and certified AWS practitioner. These pr
 - **Key Features:**
   - Application Load Balancer (ALB) for intelligent traffic distribution.
   - Dynamic Auto Scaling based on traffic patterns.
-- [View Project Details](./BalancedFlow%20-%20Elastic%20Load%20Balancing%20and%20Autoscaling/BalancedFlow%20ELB%20&%20ASG.md)
+- [View Project Details](./BalancedFlow%20-%20Elastic%20Load%20Balancing%20and%20Autoscaling/)
 
 ### 2. **Serverless Real-Time Chat Application with Global Distribution**
 
@@ -38,7 +38,7 @@ I am Tejas Bharambe, a cloud enthusiast and certified AWS practitioner. These pr
   - Amazon DynamoDB for a fast, scalable database solution.
   - Amazon CloudFront for global content delivery with low latency.
   - AWS CloudFormation templates to define and provision the infrastructure efficiently and consistently.
-- [View Project Details](./Serverless%20Chat%20Application/Serverless%20ChatAPI%20readme.md)
+- [View Project Details](./Serverless%20Chat%20Application/)
 
 ### 3. **AWS Hosted Static Website**
 
@@ -47,4 +47,4 @@ I am Tejas Bharambe, a cloud enthusiast and certified AWS practitioner. These pr
   - Amazon S3 for static file hosting.
   - Amazon CloudFront for content caching and fast delivery.
   - HTTPS support using Amazon Certificate Manager (ACM).
-- [View Project Details](./Static%20Website%20Hosting%20Using%20Amazon%20S3%20and%20CloudFront/static%20web%20hosting.md)
+- [View Project Details](./Static%20Website%20Hosting%20Using%20Amazon%20S3%20and%20CloudFront/)
